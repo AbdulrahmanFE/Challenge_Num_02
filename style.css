@@ -1,0 +1,105 @@
+  * {
+    padding: 0;
+    margin: 0;
+    /* -webkit-box-sizing: border-box; */
+    /*  -moz-box-sizing: border-box; */
+    /* box-sizing: border-box; */
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+  }
+  main {
+    background-color: hsl(216, 50%, 16%);
+    width: 285px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+  main > .image {
+    position: relative;
+    overflow: hidden;
+  }
+  main > .image::before { 
+    content: url(images/icon-view.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 255 247 / 55%);
+    width: 100%;
+    height: 99%;
+    border-radius: 8px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.5s;
+  }
+  main >.image:hover::before {
+    opacity: 1;
+  }
+  main > .image img {
+    border-radius: 8px;
+    width: 100%;
+  }
+  main h2 {
+    color: hsl(0, 0%, 100%);
+    padding: 15px 0;
+    transition: 0.5s;
+  }
+  main h2:hover{
+    color: hsl(178, 100%, 50%);
+  }
+  main section > p {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+  }
+  main section .info {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 0;
+  }
+  main section .info span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main section .info > span:first-of-type {
+    color: hsl(178, 100%, 50%);
+  }
+  main section .info > span:last-of-type {
+    color: hsl(215, 51%, 70%);
+  }
+  main section .info span > svg {
+    margin-right: 5px;
+  }
+  main section .details {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 0;
+  }
+  main section .details img {
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  main section .details > p {
+    color: hsl(215, 51%, 70%);
+  }
+  main section .details > p > span {
+    color: white;
+    transition: 0.5s;
+  }
+  main section .details > p > span:hover {
+    color: hsl(178, 100%, 50%);
+  }
