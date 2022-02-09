@@ -1,22 +1,27 @@
   * {
     padding: 0;
     margin: 0;
-    /* -webkit-box-sizing: border-box; */
-    /*  -moz-box-sizing: border-box; */
-    /* box-sizing: border-box; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
   }
   body {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     background-color: hsl(217, 54%, 11%);
     font-family: 'Outfit', sans-serif;
   }
   main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: hsl(216, 50%, 16%);
-    width: 300px;
+    width: 350px;
     padding: 20px;
     border-radius: 16px;
   }
@@ -30,17 +35,20 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgb(0 255 247 / 55%);
-    width: 100%;
-    height: 99%;
-    border-radius: 8px;
+    width: 0%;
+    height: 0%;
     opacity: 0;
+    border-radius: 8px;
     cursor: pointer;
-    transition: opacity 0.5s;
+    transition: 0.5s;
   }
   main >.image:hover::before {
+    width: 310px;
+    height: 310px;
     opacity: 1;
   }
   main > .image img {
@@ -50,21 +58,29 @@
   main h2 {
     color: hsl(0, 0%, 100%);
     padding: 15px 0;
-    transition: 0.5s;
+    font-weight: 400;
+    transition: color 0.5s;
   }
-  main h2:hover{
+  main h2  > a {
+    color: hsl(0, 0%, 100%);
+    transition: color 0.5s;
+  }
+  main h2:hover,
+  main h2:hover a{
     color: hsl(178, 100%, 50%);
   }
   main section > p {
     font-size: 18px;
     color: hsl(215, 51%, 70%);
     line-height: 1.5;
+    font-weight: 300;
   }
   main section .info {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 25px 0;
+    align-items: center;
+    padding: 20px 0;
   }
   main section .info span {
     display: flex;
@@ -73,12 +89,14 @@
   }
   main section .info > span:first-of-type {
     color: hsl(178, 100%, 50%);
+    font-weight: 600;
   }
   main section .info > span:last-of-type {
     color: hsl(215, 51%, 70%);
+    font-weight: 300;
   }
   main section .info span > svg {
-    margin-right: 5px;
+    margin: 1px 7px 0 0;
   }
   main section .details {
     border-top: 1px solid hsl(215, 32%, 27%);
