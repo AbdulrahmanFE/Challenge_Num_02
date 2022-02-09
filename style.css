@@ -24,7 +24,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: hsl(216, 50%, 16%);
-    width: 360px;
+    width: 350px;
     padding: 25px;
     border-radius: 16px;
   }
@@ -51,26 +51,27 @@
     transition: 0.5s;
   }
   .container >.image:hover::before {
-    width: 310px;
-    height: 310px;
+    width: 301px;
+    height: 301px;
+    margin-top: -1px;
     opacity: 1;
   }
   .container > .image img {
     border-radius: 8px;
     width: 100%;
   }
-  .container h3 {
+  .container h2 {
     color: hsl(0, 0%, 100%);
     padding: 15px 0;
     font-weight: 400;
     transition: color 0.5s;
   }
-  .container h3 > a {
+  .container h2 > a {
     color: hsl(0, 0%, 100%);
     transition: color 0.5s;
   }
-  .container h3:hover,
-  .container h3:hover a{
+  .container h2:hover,
+  .container h2:hover a{
     color: hsl(178, 100%, 50%);
   }
 /* End The Header Of The Card */
@@ -86,7 +87,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 25px 0 20px;
   }
   .container section .info span {
     display: flex;
@@ -111,7 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 0 10px;
+    padding: 20px 0 10px;
   }
   .container section .details img {
     width: 30px;
