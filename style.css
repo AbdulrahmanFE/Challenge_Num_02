@@ -59,18 +59,18 @@
     border-radius: 8px;
     width: 100%;
   }
-  .container h2 {
+  .container h3 {
     color: hsl(0, 0%, 100%);
     padding: 15px 0;
     font-weight: 400;
     transition: color 0.5s;
   }
-  .container h2 > a {
+  .container h3 > a {
     color: hsl(0, 0%, 100%);
     transition: color 0.5s;
   }
-  .container h2:hover,
-  .container h2:hover a{
+  .container h3:hover,
+  .container h3:hover a{
     color: hsl(178, 100%, 50%);
   }
 /* End The Header Of The Card */
@@ -86,7 +86,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 25px 0;
+    padding: 20px 0;
   }
   .container section .info span {
     display: flex;
@@ -111,10 +111,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 0;
+    padding: 15px 0 0;
   }
   .container section .details img {
-    width: 30px;
+    width: 40px;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
     margin-right: 15px;
