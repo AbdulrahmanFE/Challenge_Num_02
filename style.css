@@ -24,7 +24,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: hsl(216, 50%, 16%);
-    width: 350px;
+    width: 375px;
     padding: 25px;
     border-radius: 16px;
   }
@@ -51,8 +51,8 @@
     transition: 0.5s;
   }
   .container >.image:hover::before {
-    width: 300px;
-    height: 300px;
+    width: 325px;
+    height: 325px;
     opacity: 1;
   }
   .container > .image img {
