@@ -64,7 +64,7 @@
     color: hsl(0, 0%, 100%);
     padding: 20px 0;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 21px;
     transition: color 0.5s;
   }
   .container h2 > a {
@@ -77,58 +77,58 @@
   }
 /* End The Header Of The Card */
 /* Start The Body Of The Card */
-  .container section > p {
+  .container .content > p {
     font-size: 18px;
     color: hsl(215, 51%, 70%);
     line-height: 1.5;
     font-weight: 300;
   }
-  .container section .info {
+  .container .content .info {
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 25px 0 20px;
+    padding: 20px 0;
   }
-  .container section .info span {
+  .container .content .info span {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .container section .info > span:first-of-type {
+  .container .content .info > span:first-of-type {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
   }
-  .container section .info > span:last-of-type {
+  .container .content .info > span:last-of-type {
     color: hsl(215, 51%, 70%);
     font-weight: 300;
   }
-  .container section .info span > svg {
+  .container .content .info span > svg {
     margin: 1px 7px 0 0;
   }
 /* End The Body Of The Card */
 /* Start The Footer Of The Card */
-  .container section .details {
+  .container .content .details {
     border-top: 1px solid hsl(215, 32%, 27%);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px 0 10px;
+    padding: 15px 0;
   }
-  .container section .details img {
+  .container .content .details img {
     width: 30px;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
     margin-right: 15px;
   }
-  .container section .details > p {
+  .container .content .details > p {
     color: hsl(215, 51%, 70%);
   }
-  .container section .details > p > span {
+  .container .content .details > p > span {
     color: white;
     transition: 0.5s;
   }
-  .container section .details > p > span:hover {
+  .container .content .details > p > span:hover {
     color: hsl(178, 100%, 50%);
   }
 /* End The Footer Of The Card */
