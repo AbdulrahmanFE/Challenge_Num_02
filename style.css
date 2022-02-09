@@ -64,7 +64,7 @@
     color: hsl(0, 0%, 100%);
     padding: 25px 0;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 21px;
     transition: color 0.5s;
   }
   .container h2 > a {
