@@ -62,9 +62,9 @@
   }
   .container h2 {
     color: hsl(0, 0%, 100%);
-    padding: 20px 0;
+    padding: 25px 0;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 22px;
     transition: color 0.5s;
   }
   .container h2 > a {
