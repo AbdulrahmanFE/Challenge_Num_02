@@ -1,3 +1,4 @@
+/* Start Global Rules */
   * {
     padding: 0;
     margin: 0;
@@ -15,7 +16,9 @@
     background-color: hsl(217, 54%, 11%);
     font-family: 'Outfit', sans-serif;
   }
-  main {
+/* End Global Rules */
+/* Start Card */
+  .container {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -25,11 +28,12 @@
     padding: 20px;
     border-radius: 16px;
   }
-  main > .image {
+/* Start The Header Of The Card */
+  .container > .image {
     position: relative;
     overflow: hidden;
   }
-  main > .image::before { 
+  .container > .image::before { 
     content: url(images/icon-view.svg);
     display: flex;
     align-items: center;
@@ -46,78 +50,84 @@
     cursor: pointer;
     transition: 0.5s;
   }
-  main >.image:hover::before {
+  .container >.image:hover::before {
     width: 310px;
     height: 310px;
     opacity: 1;
   }
-  main > .image img {
+  .container > .image img {
     border-radius: 8px;
     width: 100%;
   }
-  main h2 {
+  .container h2 {
     color: hsl(0, 0%, 100%);
     padding: 15px 0;
     font-weight: 400;
     transition: color 0.5s;
   }
-  main h2  > a {
+  .container h2  > a {
     color: hsl(0, 0%, 100%);
     transition: color 0.5s;
   }
-  main h2:hover,
-  main h2:hover a{
+  .container h2:hover,
+  .container h2:hover a{
     color: hsl(178, 100%, 50%);
   }
-  main section > p {
+/* End The Header Of The Card */
+/* Start The Body Of The Card */
+  .container section > p {
     font-size: 18px;
     color: hsl(215, 51%, 70%);
     line-height: 1.5;
     font-weight: 300;
   }
-  main section .info {
+  .container section .info {
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 25px 0;
   }
-  main section .info span {
+  .container section .info span {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  main section .info > span:first-of-type {
+  .container section .info > span:first-of-type {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
   }
-  main section .info > span:last-of-type {
+  .container section .info > span:last-of-type {
     color: hsl(215, 51%, 70%);
     font-weight: 300;
   }
-  main section .info span > svg {
+  .container section .info span > svg {
     margin: 1px 7px 0 0;
   }
-  main section .details {
+/* End The Body Of The Card */
+/* Start The Footer Of The Card */
+  .container section .details {
     border-top: 1px solid hsl(215, 32%, 27%);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 15px 0;
   }
-  main section .details img {
+  .container section .details img {
     width: 30px;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
     margin-right: 15px;
   }
-  main section .details > p {
+  .container section .details > p {
     color: hsl(215, 51%, 70%);
   }
-  main section .details > p > span {
+  .container section .details > p > span {
     color: white;
     transition: 0.5s;
   }
-  main section .details > p > span:hover {
+  .container section .details > p > span:hover {
     color: hsl(178, 100%, 50%);
   }
+/* End The Footer Of The Card */
+/* End Card */
