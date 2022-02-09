@@ -51,8 +51,8 @@
     transition: 0.5s;
   }
   .container >.image:hover::before {
-    width: 310px;
-    height: 310px;
+    width: 300px;
+    height: 300px;
     opacity: 1;
   }
   .container > .image img {
@@ -65,7 +65,7 @@
     font-weight: 400;
     transition: color 0.5s;
   }
-  .container h2  > a {
+  .container h2 > a {
     color: hsl(0, 0%, 100%);
     transition: color 0.5s;
   }
