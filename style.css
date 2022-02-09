@@ -111,7 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 0 0;
+    padding: 15px 0 10px;
   }
   .container section .details img {
     width: 40px;
