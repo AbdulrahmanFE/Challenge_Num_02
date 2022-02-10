@@ -9,31 +9,49 @@
   a {
     text-decoration: none;
   }
+  ul {
+    list-style: none;
+  }
   body {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
     background-color: hsl(217, 54%, 11%);
     font-family: 'Outfit', sans-serif;
   }
 /* End Global Rules */
+/* Start hidden H1 */
+  .hidden {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important; 
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
 /* Start Card */
   .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     background-color: hsl(216, 50%, 16%);
-    width: 350px;
+    max-width: 350px;
     padding: 25px;
     border-radius: 16px;
   }
 /* Start The Header Of The Card */
-  .container > .image {
+  .image {
     position: relative;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
+    display: block;
   }
-  .container > .image::before { 
+  .image::before { 
     content: url(images/icon-view.svg);
     display: flex;
     align-items: center;
@@ -48,87 +66,83 @@
     opacity: 0;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: all 0.25s;
   }
-  .container >.image:hover::before {
-    width: 301px;
-    height: 301px;
-    margin-top: -1px;
+  .image:hover::before {
+    width: 100%;
+    height: 100%;
     opacity: 1;
   }
-  .container > .image img {
+  .image img {
     border-radius: 8px;
     width: 100%;
   }
-  .container h2 {
+  .title > a {
+    display: block;
     color: hsl(0, 0%, 100%);
     padding: 20px 0 15px;
     font-weight: 600;
-    font-size: 21px;
-    transition: color 0.5s;
+    font-size: 1.3131rem;
+    transition: color 0.3s;
   }
-  .container h2 > a {
-    color: hsl(0, 0%, 100%);
-    transition: color 0.5s;
-  }
-  .container h2:hover,
-  .container h2:hover a{
+  .title:hover a{
     color: hsl(178, 100%, 50%);
   }
 /* End The Header Of The Card */
 /* Start The Body Of The Card */
-  .container .content > p {
-    font-size: 18px;
+  .content > p {
+    font-size: 1.125rem;
     color: hsl(215, 51%, 70%);
     line-height: 1.5;
     font-weight: 300;
   }
-  .container .content .info {
+  .info {
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     padding: 25px 0;
   }
-  .container .content .info span {
+  .info li {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .container .content .info > span:first-of-type {
+  .info > .price p{
     color: hsl(178, 100%, 50%);
     font-weight: 600;
+    margin-left: 7px;
   }
-  .container .content .info > span:last-of-type {
+  .info > .time p{
     color: hsl(215, 51%, 70%);
     font-weight: 300;
-  }
-  .container .content .info span > svg {
-    margin: 1px 7px 0 0;
+    margin-left: 7px;
   }
 /* End The Body Of The Card */
 /* Start The Footer Of The Card */
-  .container .content .details {
+  .details {
     border-top: 1px solid hsl(215, 32%, 27%);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 0 10px;
+    padding: 20px 0 10px;
   }
-  .container .content .details img {
-    width: 30px;
+  .details img {
+    width: 35px;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
     margin-right: 15px;
   }
-  .container .content .details > p {
+  .details > p {
     color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 1rem;
   }
-  .container .content .details > p > span {
+  .details > p > a {
     color: white;
-    transition: 0.5s;
+    transition: 0.3s;
   }
-  .container .content .details > p > span:hover {
+  .details > p > a:hover {
     color: hsl(178, 100%, 50%);
   }
 /* End The Footer Of The Card */
