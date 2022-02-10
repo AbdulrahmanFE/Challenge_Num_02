@@ -80,7 +80,7 @@
   .title > a {
     display: block;
     color: hsl(0, 0%, 100%);
-    padding: 20px 0 15px;
+    padding: 25px 0 15px;
     font-weight: 600;
     font-size: 1.375rem;
     transition: color 0.3s;
@@ -128,7 +128,7 @@
     padding: 20px 0 10px;
   }
   .details img {
-    width: 35px;
+    width: 30px;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
     margin-right: 15px;
