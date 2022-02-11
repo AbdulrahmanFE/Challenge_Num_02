@@ -101,7 +101,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 25px 0;
+    padding: 25px 0 30px;
   }
   .info li {
     display: flex;
@@ -125,7 +125,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 0 5px;
+    padding-top: 20px;
+    margin-bottom: 10px;
   }
   .details img {
     width: 35px;
