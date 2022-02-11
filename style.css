@@ -127,10 +127,10 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
   .details img {
-    width: 35px;
+    width: 32px;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
     margin-right: 16px;
