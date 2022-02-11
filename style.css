@@ -116,7 +116,7 @@
   }
   .info > .time p{
     color: hsl(215, 51%, 70%);
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 7px;
   }
 /* End The Body Of The Card */
@@ -126,7 +126,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 15px;
+    padding-top: 14px;
     margin-bottom: 10px;
   }
   .details img {
