@@ -1,4 +1,4 @@
-<img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/lphlhinp8axkoadq4jq7.jpg"></img>
+<img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/cybxdhr4wewlscvco9dd.jpg"></img>
 
 
 <h1 align="center">NFT preview card component challenge</h1>
